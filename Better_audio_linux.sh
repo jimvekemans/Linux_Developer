@@ -19,4 +19,4 @@ sudo echo "pcm.!default {" > /etc/asound.conf
 sudo echo "type plug" >> /etc/asound.conf
 sudo echo "   slave.pcm hw" >> /etc/asound.conf
 sudo echo "}" >> /etc/asound.conf
-sudo shutdown -r 0
+echo "Please reboot your computer :)"
