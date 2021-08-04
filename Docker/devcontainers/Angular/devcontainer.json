@@ -1,0 +1,22 @@
+{
+    "name": "Angular devcontainer",
+    "dockerFile": "Dockerfile",
+    "appPort": [4200],
+    "settings": {
+        "workbench.colorTheme": "Andromeda Bordered",
+        "terminal.integrated.automationShell.linux": "/bin/bash"
+    },
+    "postCreateCommand": ["npm", "install"],
+    "extensions": [
+        "eliverlara.andromeda",
+        "alexiv.vscode-angular2-files",
+        "angular.ng-template",
+        "cyrilletuzi.angular-schematics",
+        "johnpapa.angular2",
+        "pkief.material-icon-theme",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ]
+}
