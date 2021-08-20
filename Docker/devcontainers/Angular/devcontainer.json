@@ -12,12 +12,16 @@
         "alexiv.vscode-angular2-files",
         "angular.ng-template",
         "cyrilletuzi.angular-schematics",
+        "1tontech.angular-material",
         "johnpapa.angular2",
         "1tontech.angular-material",
         "pkief.material-icon-theme",
         "eg2.vscode-npm-script",
         "christian-kohler.npm-intellisense",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "coenraads.bracket-pair-colorizer",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "coenraads.bracket-pair-colorizer"
     ]
 }

@@ -25,7 +25,9 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 ```
 ------
 ### helpful commands
-- open GPU-accelerated jupyter docker container with current folder mounted 
+- open GPU-accelerated jupyter tensorflow docker container with current folder mounted 
   ```docker run --init --rm --gpus all -v $(pwd):/tf/code --publish 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter```
+- open GPU-accelerated jupyter fastai docker container with current folder mounted 
+  ```docker run --init -it --rm --gpus all -p 8888:8888 -v $(pwd):/workspace/code fastdotai/fastai:2.2.5 ./run_jupyter.sh```
 - clean all docker containers and images 
   ```docker container stop $(docker ps -q); docker container prune -f; docker image rm $(docker image ls -q) -f; docker image prune -f```
