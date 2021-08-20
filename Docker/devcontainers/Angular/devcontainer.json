@@ -13,6 +13,7 @@
         "angular.ng-template",
         "cyrilletuzi.angular-schematics",
         "johnpapa.angular2",
+        "1tontech.angular-material",
         "pkief.material-icon-theme",
         "eg2.vscode-npm-script",
         "christian-kohler.npm-intellisense",

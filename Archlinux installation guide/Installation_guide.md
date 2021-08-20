@@ -46,7 +46,11 @@
 ## Connect to internet
 ```bash
 > ip a # if using ethernet, you should have an assigned ipv4
-> #TODO add wifi commands
+> iwctl # Start wifi tool
+> device list
+> station wlan0 scan
+> station wlan0 get-networks
+> station wlan0 connect {SSID}
 ```
 
 ## Install base
@@ -110,6 +114,7 @@
 
 ```bash
 > chown {username} /opt
+> su {username}
 > git clone https://aur.archlinux.org/paru.git /opt/paru && cd /opt/paru && makepkg -si
 > paru -Syyy
 ```
