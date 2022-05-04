@@ -30,4 +30,11 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 - open GPU-accelerated jupyter fastai docker container with current folder mounted 
   ```docker run --init -it --rm --gpus all -p 8888:8888 -v $(pwd):/workspace/code fastdotai/fastai:2.2.5 ./run_jupyter.sh```
 - clean all docker containers and images 
-  ```docker container stop $(docker ps -q); docker container prune -f; docker image rm $(docker image ls -q) -f; docker image prune -f```
+  ```bash
+  docker container stop $(docker ps -q)
+  docker container prune -f
+  docker image rm $(docker image ls -q) -f
+  docker image prune -f
+  docker volume prune -f
+  docker network prune -f
+  ```
