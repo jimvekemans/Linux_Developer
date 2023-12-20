@@ -15,3 +15,5 @@ rm ~/.gnupg/trustdb.gpg~
 
 # Open the GitHub GPG key page in the default browser
 xdg-open "https://github.com/settings/gpg/new"
+
+# Some mistakes were made, so I had to delete the key and start again.
